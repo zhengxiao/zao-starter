@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>流动的抽象 · Flowing Abstraction — 赵无极</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- p5.js + p5.sound：先用国内镜像 npmmirror，打不开就自动换成 jsDelivr / China mirror first, then jsDelivr -->
+  <script src="https://registry.npmmirror.com/p5/1.11.10/files/lib/p5.min.js"></script>
+  <script>window.p5 || document.write('<script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.min.js"><\/script>')</script>
+  <script src="https://registry.npmmirror.com/p5/1.11.10/files/lib/addons/p5.sound.min.js"></script>
+  <script>(window.p5 && window.p5.SoundFile) || document.write('<script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/addons/p5.sound.min.js"><\/script>')</script>
+  <script src="sketch.js"></script>
+</head>
+<body>
+  <div id="intro">
+    <div class="card">
+      <h1>流动的抽象 · Flow</h1>
+      <p class="sub">致敬 赵无极 · after Zao Wou-Ki</p>
+      <ul>
+        <li>手腕、手肘和鼻子都是画笔 · Your wrists, elbows and nose are brushes</li>
+        <li>颜料会一直流动、旋转 · The paint keeps flowing and swirling</li>
+        <li>双手举过肩膀 = 暖色，放下 = 冷色 · Hands above shoulders = warm colors, down = cool colors</li>
+        <li>张开双臂，和弦变亮；动得快，有“刷”的声音 · Open your arms to brighten the chord; move fast for a brush sound</li>
+        <li>手腕穿过画面中线，响一声铃 · A bell rings when a wrist crosses the middle</li>
+        <li><kbd>C</kbd> 新画布 new canvas · <kbd>S</kbd> 保存 save · <kbd>K</kbd> 骨架 skeleton</li>
+      </ul>
+      <p class="tip">退后到摄像头能看到你的上半身（最好是全身）· Step back until the camera sees your upper body (full body is best)</p>
+      <button id="start">开始作画 · Start painting</button>
+    </div>
+  </div>
+  <div id="status"></div>
+</body>
+</html>

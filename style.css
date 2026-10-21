@@ -1,0 +1,97 @@
+/* 全屏画布，没有滚动条 / full-screen canvas, no scrollbars */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #16130f;
+  color: #f2efe4;
+  font-family: "Avenir Next", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+/* 开始界面 / start screen */
+#intro {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #16130f;
+  z-index: 10;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.card {
+  max-width: 640px;
+  padding: 28px 32px;
+  background: rgba(30, 26, 20, 0.92);
+  border: 2px solid #e8a33d;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.card h1 {
+  font-size: clamp(2.2rem, 8vw, 4rem);
+  margin: 0;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.sub {
+  margin: 6px 0 18px;
+  opacity: 0.8;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.tip {
+  font-size: 0.9em;
+  opacity: 0.75;
+  margin: 0 0 20px;
+}
+
+kbd {
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  padding: 0 6px;
+  font-size: 0.85em;
+}
+
+#start {
+  font-family: inherit;
+  font-size: 1.15rem;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 999px;
+  background: #3f88a8;
+  color: #f2efe4;
+  cursor: pointer;
+}
+
+#start:hover {
+  filter: brightness(1.15);
+}
+
+/* 状态提示 / status line */
+#status {
+  position: fixed;
+  left: 16px;
+  bottom: 12px;
+  font-size: 0.85rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  pointer-events: none;
+  max-width: calc(100vw - 48px);
+}
